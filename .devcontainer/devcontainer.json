@@ -1,7 +1,4 @@
 {
   "name": "Tailwind CSS Sandbox",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node",
-
-  "workspaceFolder": "/workspace",
-  "workspaceMount": "source=remote-workspace,target=/workspace,type=volume"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node"
 }

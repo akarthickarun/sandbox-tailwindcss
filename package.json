@@ -1,0 +1,16 @@
+{
+  "name": "sandbox-tailwindcss",
+  "version": "1.0.0",
+  "description": "Sandbox for Tailwind CSS",
+  "scripts": {
+    "start": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "keywords": ["css", "tailwindcss", "devcontainer", "html", "web design"],
+  "author": "Karthick Arun Arumugam",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^2.2.19"
+  }
+}

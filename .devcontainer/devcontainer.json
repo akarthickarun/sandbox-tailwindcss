@@ -1,4 +1,12 @@
 {
   "name": "Tailwind CSS Sandbox",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node"
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bradlc.vscode-tailwindcss",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
 }

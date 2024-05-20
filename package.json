@@ -4,9 +4,7 @@
   "description": "Sandbox for Tailwind CSS",
   "scripts": {
     "watch": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
-    "serve": "node server.js",
-    "start": "watch && serve",
-    "dev": "browser-sync start --config bs-config.js"
+    "dev": "browser-sync start --config bs-config.js --index index.html"
   },
   "keywords": [
     "css",
@@ -20,11 +18,7 @@
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.18",
     "browser-sync": "^3.0.2",
-    "nodemon": "^3.1.0",
     "postcss": "^8.4.38",
     "tailwindcss": "^2.2.19"
-  },
-  "dependencies": {
-    "express": "^4.19.2"
   }
 }

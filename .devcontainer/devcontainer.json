@@ -4,8 +4,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bradlc.vscode-tailwindcss",
-        "ritwickdey.LiveServer"
+        "bradlc.vscode-tailwindcss"
       ]
     }
   }

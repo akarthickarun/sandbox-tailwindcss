@@ -5,6 +5,6 @@ module.exports = {
     port: 3001,
     reloadDelay: 500,
     notify: false,
-    server: ["public", "dist"],
+    server: ["public", "dist", "img"],
     index: "index.html",
 };

@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" type="text/css" rel="stylesheet" />
-    <title>Tailwind CSS Sandbox</title>
-  </head>
-  <body>
-    <div class="bg-red-400 text-green-700 p-4">
-      <h1 class="text-4xl">Hello, Tailwind CSS!!!</h1>
-      <p class="text-lg text-purple-700">This is a Tailwind CSS sandbox.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" type="text/css" rel="stylesheet" />
+  <title>Tailwind CSS Sandbox</title>
+</head>
+
+<body>
+  <nav class="relative container mx-auto p-6">
+    <!-- Flex container -->
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="pt-2">
+        <img src="logo.svg" alt="" />
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 md:flex">
+        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+      </div>
+      <!-- Button -->
+      <a href="#"
+        class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block">Get
+        Started</a>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
-    <div class="bg-yellow-900">
-      <p
-        class="text-center first-letter:bg-blue-600 first-letter:font-extrabold text-yellow-100"
-      >
-        This is wonderful seeing live update during the development. 
-      </p>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu"
+        class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+        <a href="#">Pricing</a>
+        <a href="#">Product</a>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Community</a>
+      </div>
     </div>
-  </body>
+  </nav>
+</body>
+
 </html>
